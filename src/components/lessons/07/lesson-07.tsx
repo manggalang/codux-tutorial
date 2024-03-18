@@ -73,7 +73,13 @@ export const Lesson07 = () => {
         <div className={styles.root}>
             <Task />
             <div className={styles.playground}>
-                <Box outlined color="pastelPink" icon="heartOutline" className={styles.icon} />
+                <Box
+                    outlined
+                    color="pastelPink"
+                    icon="heartOutline"
+                    className={styles.icon}
+                    iconDirection="left"
+                />
                 <Box
                     outlined
                     color={getColor(0)}
@@ -138,7 +144,7 @@ export const Lesson07 = () => {
 
 function getSolutionStatus() {
     const onStageDirections = Array.from(document.querySelectorAll('[data-direction]'), (icon) =>
-        icon.getAttribute('data-direction')
+        icon.getAttribute('data-direction'),
     ).join('');
 
     const resolution: { solved: boolean; solutionIndex: number } = {

@@ -24,6 +24,7 @@
     grid-template-rows: 60px 60px 60px 60px;
     padding: 130px 75px 130px 75px;
     gap: 20px;
+    grid-auto-flow: column;
   }
 }
 
